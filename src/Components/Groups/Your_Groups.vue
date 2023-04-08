@@ -4,24 +4,23 @@
             Your Groups
         </h3>
         <section>
-            <q-list bordered separator>
-                <q-item
+            <div class="q-list bordered separator">
+                <div class="q-item clickable v-ripple"
                     v-for="(group, group_index) in groups"
-                        clickable
-                        v-ripple
                         :to="'/group/'+group.id"
                         :key="'g'+group_index"
                 >
                     <span v-html="group.name"></span>
-                </q-item>
-            </q-list>
+				</div>
+            </div>
         </section>
-        <q-btn
-            label="Add new group"
+		<!-- Add a HTML button -->
+		
+        <button
             color="primary"
             size="sm"
             to="/group/add"
-        />
+        >Add new group</button>
 	</div>
 </template>
 

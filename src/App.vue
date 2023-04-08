@@ -1,4 +1,5 @@
 <template>
+	<Menu_Bar/>
 	<router-view/>
 </template>
 
@@ -22,9 +23,13 @@ import firebase_messaging from '@/auxiliary/firebase'
 
 // Auxiliaries
 import '@/assets/styles.css'
+import '@/assets/compiled.css'
 import bus from '@/auxiliary/bus'
 import store from './store/Store'
 import togvue from '@/libraries/togVue'
+
+// Components
+import Menu_Bar from '@/Components/Chrome/Menu_Bar.vue'									
 
 
 /*********************
@@ -34,6 +39,9 @@ import togvue from '@/libraries/togVue'
 
 export default defineComponent({
 	name: 'App',
+	components: {
+		Menu_Bar
+	},
 	setup() {
 		
 		/*******************
