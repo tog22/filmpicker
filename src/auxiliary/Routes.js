@@ -1,11 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Start_Page from '../views/Start_Page.vue'
 
 const routes = [
 	{
 		path: '/',
-		name: 'Home',
-		component: Home,
+		name: 'Film Picker',
+		component: Start_Page,
 		meta: {
 			title: 'App'
 		}

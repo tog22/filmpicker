@@ -1,34 +1,43 @@
 import { reactive, watch } from "vue";
 
-const STATE_NAME = "gods_0.2_datastore";
+const STATE_NAME = "film_picker_datastore";
 
-let store_parent // What'll get exported
-let load_saved_state = false
+var store_parent // What'll get exported
 
 const default_state = {
-        logged_in: 	        true,
-        user:			    null,
-        token:		        'unset',
-		online: {
-			user: 				null, // Tomek/logging_in/etc
-			userpass: 			null, // pass/etc
-			// game_id: 			22,
-			// game_pass: 			10559,
-			// side: 				1,
-			game_id: null,
-			game_pass: null,
-			side: null,
-			subscreen: 			'user menu', // default = 'user menu'
-			error: 				null,
-			login_error: 		null,
-			signup_error: 		null,
-			has_current_games: 	true, // todo, low: set
-			games: 				[] // gets set in continue_online()
+		test_initialization:  'initialized',
+		user: {
+			uid: 			1,
+			first_name: 	'Tom',
+			full_name:		'Tom Ash'
+		},
+		friends: {
+			2: 	{
+				uid: 			2,
+				full_name: 		'June',
+				first_name: 	'June'
+			}
+		},
+		current: {
+			group: 1
+		},
+		sections: {
+			add_film:   {
+				search_results: {},
+				previous_page:	'/user/films'
+			},
+			group: 	{
+				displayed: 		{
+					name:		'Error: no group selected',
+					members: 	{}
+				}
+			}
+			
 		}
 }
 
 const getdefault_state = () => {
-	if (load_saved_state && localStorage.getItem(STATE_NAME) !== null) {
+	if (localStorage.getItem(STATE_NAME) !== null) {
 		let saved_state = JSON.parse(localStorage.getItem(STATE_NAME))
 		update_recursively(saved_state, default_state)
 		return saved_state

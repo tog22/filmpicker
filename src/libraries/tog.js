@@ -125,7 +125,7 @@ var tog = {
   
       function (to_update, to_match) {
         for (var key in to_match) {
-          if (!to_match.hasOwnProperty(key)) {
+          if (!to_match.hasOwnProperty(key)) { // eslint-disable-line no-prototype-builtins
             continue;
           } else if (typeof to_match[key] == "object" && to_match[key] !== null) {
             if (key in to_update) {
