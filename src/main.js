@@ -1,8 +1,39 @@
-import Vue from 'vue'
+/*******************
+**   ⤵️ IMPORTS   **
+*******************/
+
+// Libraries
+import { createApp, provide } from 'vue'
 import App from './App.vue'
+import router from './router'
+import store from './store/Store'
 
-Vue.config.productionTip = false
+/*****************
+**				**
+**     MISC     ** 
+**				**
+*****************/
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
+// Custom page titles for Vue Router
+
+router.beforeEach((to, from, next) => {
+	// Get the page title from the route meta data that we have defined
+	// See further down below for how we setup this data
+	const title = to.meta.title
+	// If the route has a title, set it as the page title of the document/page
+	if (title) {
+		document.title = title
+	}
+	// Continue resolving the route
+	next()
+})
+
+
+/*****************
+**				**
+**  VUE BASICS  ** 
+**				**
+*****************/
+
+const app = createApp(App).use(router).mount('#app')
+// provide('mainjsstore', store.state) // based on vue doco, but doesn't work

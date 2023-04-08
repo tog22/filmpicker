@@ -1,9 +1,15 @@
-# film_picker
+# 🎞 Film Picker
 
 ## Project setup
 ```
 npm install
 ```
+
+Packages used include:
+- vue-router
+- @capacitor/push-notifications
+- firebase@^8.10.1
+- mitt
 
 ### Compiles and hot-reloads for development
 ```

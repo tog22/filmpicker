@@ -1,6 +1,9 @@
 {
   "name": "film_picker",
   "version": "0.1.0",
+  "description": "",
+  "productName": "FilmPicker",
+  "author": "TogApps",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -8,18 +11,28 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@capacitor/android": "^4.7.1",
+    "@capacitor/cli": "^4.7.1",
+    "@capacitor/clipboard": "^4.1.0",
+    "@capacitor/core": "^4.7.1",
+    "@capacitor/ios": "^4.7.1",
+    "@capacitor/push-notifications": "^4.1.2",
+    "@hugotomazi/capacitor-navigation-bar": "^2.0.1",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11",
-    "vue-router": "^3.5.4"
+    "firebase": "^8.10.1",
+    "mitt": "^3.0.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
+    "@vue/cli-plugin-router": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
+    "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^6.2.2",
-    "vue-template-compiler": "^2.6.11"
+    "eslint-plugin-vue": "^7.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -27,13 +40,31 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
+      "plugin:vue/vue3-essential",
       "eslint:recommended"
     ],
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off",
+      "no-mixed-spaces-and-tabs": 0,
+      "no-unused-components": 0,
+      "no-unused-vars": 0,
+      "no-irregular-whitespace": 0,
+      "no-redeclare": 0,
+      "no-empty": 0,
+      "vue/no-unused-vars": 0,
+      "vue/no-unused-components": 0,
+      "vue/no-parsing-error": [
+        2,
+        {
+          "x-invalid-end-tag": false
+        }
+      ],
+      "no-trailing-spaces": 0,
+      "no-debugger": 0
+    }
   },
   "browserslist": [
     "> 1%",
