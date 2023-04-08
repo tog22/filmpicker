@@ -1,7 +1,7 @@
 <template>
-    <q-page>
+    <div id="page">
         <Your_Groups />
-    </q-page>
+    </div>
 </template>
 
 <script>

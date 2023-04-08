@@ -1,9 +1,9 @@
 <template>
-	<q-page>
+	<div id="page">
 		<h1>
 			Finding IMDB IDs
 		</h1>
-	</q-page>
+	</div>
 </template>
 
 <script>

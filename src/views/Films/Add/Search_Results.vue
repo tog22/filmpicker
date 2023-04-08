@@ -22,7 +22,7 @@
 				<q-btn flat color="white" label="Find ID" to="/help/imdb_id" />
 			</template>
 		</q-banner>
-	</q-page>
+	</div>
 </template>
 
 <script>

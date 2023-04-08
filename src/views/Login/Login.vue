@@ -1,5 +1,5 @@
 <template>
-    <q-page>
+    <div id="page">
 
         <h1>
             Log in
@@ -39,7 +39,7 @@
 			</div>
 		</q-form>
         <p>Option:<br/>tomashcanada@gmail.com<br/>123</p>
-	</q-page>
+	</div>
 </template>
 
 <script>

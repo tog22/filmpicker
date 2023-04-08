@@ -1,5 +1,5 @@
 <template>
-	<q-page>
+	<div id="page">
 		<h1>
 				Find Film
 		</h1>
@@ -25,7 +25,7 @@
 					Please enter a title or IMDB ID
 			</q-banner>
 		</q-form>
-	</q-page>
+	</div>
 </template>
 
 <script>

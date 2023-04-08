@@ -1,5 +1,5 @@
 <template>
-	<q-page>
+	<div id="page">
 		<section>
 			<h2>
 				How do you feel about watching this?
@@ -69,7 +69,7 @@
 				</div>
 			</div>
 		</section>
-	</q-page>
+	</div>
 </template>
 
 <script>

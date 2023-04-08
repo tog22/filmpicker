@@ -55,12 +55,9 @@ body {
 	}
 
 	#app,
-	.q-page,
-	.q-page-container,
-	.q-layout-container,
-	#q-app {
+	#page,
+	.flx {
 		flex-grow: 1;
-
 		display: flex;
 	}
 

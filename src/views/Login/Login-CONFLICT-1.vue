@@ -1,5 +1,5 @@
 <template>
-    <q-page>
+    <div id="page">
 
         <h1>
             Log in
@@ -37,7 +37,7 @@
 				/>
 			</div>
 		</q-form>
-	</q-page>
+	</div>
 </template>
 
 <script>

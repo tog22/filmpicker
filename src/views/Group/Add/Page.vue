@@ -1,5 +1,5 @@
 <template>
-	<q-page>
+	<div id="page">
 		<h1>
 			Create Movie Club
 		</h1>
@@ -28,7 +28,7 @@
 				/>
 			</div>
 		</q-form>
-	</q-page>
+	</div>
 </template>
 
 <script>

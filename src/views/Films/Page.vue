@@ -1,5 +1,5 @@
 <template>
-    <q-page>
+    <div id="page">
 
       <h2 v-html="group.name">
       </h2>
@@ -15,7 +15,7 @@
           />
         </div>
 
-    </q-page>
+    </div>
 </template>
 
 <script>
