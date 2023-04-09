@@ -8,48 +8,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	color: white;
 	background-color: $dark-blue;
-	min-height: 50px;
-	padding: 0.2em 20px;
+	height: 62px;
+	padding: 0.2em $side-margin;
 }
-
-#menu_bar .s_left,
-#menu_bar .s_right {
-	width: 40px;
-}
-
-.back {
-	font-size: 1.4em;
-	padding-left: 12px;
-	position: relative;
-}
-
-@media screen and ( max-width: 767px ) and (hover: none) {
-	#menu_bar {
-		height: 6vh;
-	}
-
-	#menu_bar .s_left,
-	#menu_bar .s_right {
-		width: 10vw;
-	}
-
-	h1 {
-		font-size: 5vw;
-	}
-
-	.back {
-		padding-left: 3.5vw;
-	}
-
-}
-
 
 #logo_and_title {
 	font-size: 21px;
 	letter-spacing: 0.01em;
-	padding: 0 12px;
+
 	display: flex;
+	align-items: center;
 }
 
 #logo {
@@ -59,10 +30,16 @@
 
 h1#app_title {
 	font-size: 1.45em;
-	color: white;
+	margin-right: 2em;
 	text-transform: none;
+	padding-bottom: 0.15em; // to align with logo
 }
 
+#menu_bar .menu_icon {
+	position: relative;
+	top: -0.12em;
+	font-size: 2em;
+}
 #basic_menu {
 	z-index: 2;
 	background-color: white;
@@ -71,4 +48,14 @@ h1#app_title {
 	top: 80px;
 	padding: 1em;
 	border: 1px solid #ddd;
+}
+
+
+
+/**************************/
+/* CONTENT ZONE
+/**************************/
+
+#page {
+	margin: 20px $side-margin 8px;
 }
