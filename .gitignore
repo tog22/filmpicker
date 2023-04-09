@@ -21,3 +21,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Sass
+src/assets/compiled.css
+src/assets/compiled.css.map

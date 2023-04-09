@@ -646,8 +646,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(56, 116, 203);
-  height: 40px;
+  background-color: rgb(25, 118, 210);
+  min-height: 50px;
+  padding: 0.2em 20px;
 }
 
 #menu_bar .s_left,

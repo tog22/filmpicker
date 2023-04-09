@@ -9,7 +9,8 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: $dark-blue;
-	height: 40px;
+	min-height: 50px;
+	padding: 0.2em 20px;
 }
 
 #menu_bar .s_left,
