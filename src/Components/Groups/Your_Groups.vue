@@ -17,8 +17,7 @@
 		<!-- Add a HTML button -->
 		
         <button
-            color="primary"
-            size="sm"
+            class="blue_button s_small"
             to="/group/add"
         >Add new group</button>
 	</div>
