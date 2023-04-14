@@ -8,7 +8,84 @@ const routes = [
 		name: 'Film Picker',
 		component: Start_Page,
 		meta: {
-			title: 'App'
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
+		path: '/group',
+		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		meta: {
+			title: 'Film Picker'
 		}
 	},
 	// {
