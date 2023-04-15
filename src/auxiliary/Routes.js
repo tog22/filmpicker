@@ -13,81 +13,81 @@ const routes = [
 	},
 	{
 		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		component: () => import(/* webpackChunkName: "group_chunk" */ '../views/Group/List/Page.vue'),
 		meta: {
 			title: 'Film Picker'
 		}
 	},
 	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		path: '/group/:id',
+		component: () => import(/* webpackChunkName: "group_chunk" */ '../views/Films/Page.vue'),
 		meta: {
 			title: 'Film Picker'
 		}
 	},
 	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+		path: '/group/add',
+		component: () => import(/* webpackChunkName: "group_chunk" */ '../views/Group/Add/Page.vue'),
 		meta: {
 			title: 'Film Picker'
 		}
 	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
-	{
-		path: '/group',
-		component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
-		meta: {
-			title: 'Film Picker'
-		}
-	},
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
+	// {
+	// 	path: '/group',
+	// 	component: () => import(/* webpackChunkName: "group" */ '../views/Group/List/Page.vue'),
+	// 	meta: {
+	// 		title: 'Film Picker'
+	// 	}
+	// },
 	// {
 	// 	path: '/about',
 	// 	name: 'About',
