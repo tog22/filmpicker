@@ -1,4 +1,4 @@
-import tog from '../Libraries/tog'
+import tog from '../libraries/tog'
 import $ from 'jquery'
 
 let api_url = 'https://filmpicker.philosofiles.com/sync/?action='

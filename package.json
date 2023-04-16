@@ -20,6 +20,7 @@
     "@hugotomazi/capacitor-navigation-bar": "^2.0.1",
     "core-js": "^3.6.5",
     "firebase": "^8.10.1",
+    "jquery": "^3.6.4",
     "mitt": "^3.0.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0"

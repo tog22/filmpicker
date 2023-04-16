@@ -1,5 +1,5 @@
 <template>
-	<q-page class="q-gutter-lg">
+	<div class="q-gutter-lg">
 		<h1>
 			Select Search Result
 		</h1>
@@ -12,16 +12,16 @@
                 :key="'f'+fid"
 			/>
 		</div>
-		<q-banner 
+		<div
 			v-if="unshown_results"
-			class="bg-primary text-white"
+			class="q-banner bg-primary text-white"
 		>
 			{{unshown_results}} unshown results. If you don't see what you're looking for, try a more specific search, or find the IMDB ID.
-			<template v-slot:action>
+			<!-- <template v-slot:action>
 				<q-btn flat color="white" label="Search again" to="/add" />
 				<q-btn flat color="white" label="Find ID" to="/help/imdb_id" />
-			</template>
-		</q-banner>
+			</template> -->
+		</div>
 	</div>
 </template>
 

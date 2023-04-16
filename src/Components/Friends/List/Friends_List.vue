@@ -18,6 +18,7 @@
 
 <script>
 import { inject } from "vue"
+import $ from 'jquery'
 
 import Friend from './Friend'
 

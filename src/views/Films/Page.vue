@@ -19,12 +19,11 @@
 </template>
 
 <script>
-import Group_Films_Table from '../../pages/Films/Table'
-/*
-*/
-
+import { inject } from "vue"
 
 import dummy_server from '../../Dummy_Server/Data'
+
+import Group_Films_Table from '../../views/Films/Table'
 
 let groups = dummy_server.groups
 

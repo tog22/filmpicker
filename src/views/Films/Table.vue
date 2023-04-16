@@ -48,13 +48,13 @@
 
 
 <script>
-import Film from '../../pages/Films/Film'
+import Film from '../../views/Films/Film'
 
 import dummy_server from '../../Dummy_Server/Data'
 import api from '../../Server/Server'
-import getb from '../../Libraries/synchronous_requests'
+import getb from '../../libraries/synchronous_requests'
 import $ from 'jquery'
-import tog from '../../Libraries/tog'
+import tog from '../../libraries/tog'
 import { toRaw } from 'vue'
 
 

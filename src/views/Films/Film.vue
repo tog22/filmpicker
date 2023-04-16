@@ -32,7 +32,7 @@
 </template>
 
 <script>
-import Ranking from '../../pages/Films/Ranking'
+import Ranking from '../../views/Films/Ranking'
 
 
 export default {

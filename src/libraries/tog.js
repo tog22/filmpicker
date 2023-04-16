@@ -129,7 +129,7 @@ var tog = {
             continue;
           } else if (typeof to_match[key] == "object" && to_match[key] !== null) {
             if (key in to_update) {
-              update_recursively(to_update[key], to_match[key])
+              tog.update_recursively(to_update[key], to_match[key])
             } else {
               to_update[key] = to_match[key]
             }
@@ -150,7 +150,7 @@ var tog = {
   
         let return_object = {}
   
-        for (element of object) {
+        for (let element of object) {
   
           if (element[key_name] != key) {
   
@@ -470,7 +470,7 @@ var tog = {
                     out = 'array(' + v.length + '): {\n';
                     for (var i = 0; i < v.length; i++) {
                         out += tog.debugging. repeatString('   ', recursionLevel) + "   [" + i + "]:  " +
-                            dump(v[i], "none", recursionLevel + 1) + "\n";
+                            tog.dump(v[i], "none", recursionLevel + 1) + "\n";
                     }
                     out += tog.debugging. repeatString('   ', recursionLevel) + "}";
                 }
@@ -482,7 +482,7 @@ var tog = {
                         //No way to know the original data type of member, since JS
                         //always converts it to a string and no other way to parse objects.
                         sContents += tog.debugging. repeatString('   ', recursionLevel) + "   " + member +
-                            ":  " + dump(v[member], "none", recursionLevel + 1) + "\n";
+                            ":  " + tog.dump(v[member], "none", recursionLevel + 1) + "\n";
                         cnt++;
                     }
                     sContents += tog.debugging. repeatString('   ', recursionLevel) + "}";
@@ -546,7 +546,7 @@ var tog = {
     {
       body_to_object:
       function(string) {
-        string.replace('\"', '"')
+        string.replace('\"', '"') // eslint-disable-line
         let object = JSON.parse(string)
         return object
   
