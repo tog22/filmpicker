@@ -1,6 +1,6 @@
 <template>
 	<div id="menu_bar">
-		<div id="logo_and_title">
+		<div id="logo_and_title" @click="$router.push('/')">
 			<div id="logo">
 				🎞️
 			</div>

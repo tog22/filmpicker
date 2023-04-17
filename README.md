@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+sass --watch src/css/app.scss src/assets/compiled.css
 ```
 
 Packages used include:
