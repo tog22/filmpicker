@@ -22,7 +22,6 @@ import firebase_messaging from '@/auxiliary/firebase'
 
 
 // Auxiliaries
-import '@/assets/styles.css'
 import '@/assets/compiled.css'
 import bus from '@/auxiliary/bus'
 import store from './store/Store'
