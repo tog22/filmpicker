@@ -5,13 +5,13 @@
 		</h3>
 		<section>
 			<div class="q-list bordered separator">
-				<div class="q-item clickable v-ripple"
+				<router-link class="q-item clickable v-ripple"
 				v-for="(group, group_index) in groups"
 				:to="'/group/'+group.id"
 				:key="'g'+group_index"
 				>
 					<span v-html="group.name"></span>
-				</div>
+				</router-link>
 			</div>
 		</section>
 		

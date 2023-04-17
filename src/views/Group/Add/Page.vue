@@ -3,11 +3,11 @@
 		<h1>
 			Create Movie Club
 		</h1>
-		<q-form
+		<form
 			@submit="on_submit"
 			class="full_width_form q-gutter-y-md"
 		>
-			<q-input
+			<input
 				label="Club name"
 				v-model="club_name"
 				outlined
@@ -20,14 +20,12 @@
 				context="add_to_group"
 			/>
 			<div><!-- class="no_top"-->
-				<q-btn
+				<input
 					type="submit"
-					label="Add"
-					color="primary"
-					size="md"
+					value="Add"
 				/>
 			</div>
-		</q-form>
+		</form>
 	</div>
 </template>
 

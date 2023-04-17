@@ -121,7 +121,6 @@ Large desktops: min 1200
   .mobile_size_visible {
     display: block;
   }
-
   .mobile_size_hidden {
     display: block;
   }
@@ -151,7 +150,6 @@ Large desktops: min 1200
   .touch_device_visible {
     display: block;
   }
-
   .touch_device_hidden {
     display: none;
   }
@@ -160,7 +158,6 @@ Large desktops: min 1200
   .narrow_touch_device_visible {
     display: block;
   }
-
   .narrow_touch_device_hidden {
     display: none;
   }
@@ -284,8 +281,7 @@ img.bottom_aligned_via_vertical_align {
 
 .full_screen_iframe {
   height: 100%;
-  height: 100vh;
-  /* overrides the previous height for browsers that support it */
+  height: 100vh; /* overrides the previous height for browsers that support it */
   overflow: hidden;
   width: 100%;
   border: 0px;
@@ -462,8 +458,7 @@ ul.eg_of_custom_bullets li {
   display: flex;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
-  align-items: stretch;
-  /* Default */
+  align-items: stretch; /* Default */
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -474,8 +469,7 @@ ul.eg_of_custom_bullets li {
   /* 		display: block; */
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
-  /* Default */
+  flex: 0 1 auto; /* Default */
 }
 
 /* ↓ List version */
@@ -658,6 +652,7 @@ button {
   padding: 8px 16px;
   color: inherit;
   transition: color 0.3s, background-color 0.3s;
+  display: block;
 }
 
 .q-list {
@@ -666,14 +661,14 @@ button {
 
 .blue_button,
 a.blue_button {
-  background-color: #1976d2;
+  background-color: rgb(25, 118, 210);
   color: white;
   text-transform: uppercase;
   display: inline-block;
 }
 
 .blue_button:hover {
-  background-color: #5386d0;
+  background-color: rgb(83, 134, 208);
 }
 
 .blue_button.s_small {
@@ -693,7 +688,7 @@ a.blue_button {
   justify-content: space-between;
   align-items: center;
   color: white;
-  background-color: #1976d2;
+  background-color: rgb(25, 118, 210);
   height: 62px;
   padding: 0.2em 20px;
 }
@@ -1060,8 +1055,7 @@ td.rcell .ranking {
 }
 td.rcell .do_rank {
   display: table;
-  display: none;
-  /* gets overridden on .rcont:hover .do_rank */
+  display: none; /* gets overridden on .rcont:hover .do_rank */
   border-collapse: collapse;
   position: absolute;
   z-index: 1;
