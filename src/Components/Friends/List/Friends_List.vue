@@ -1,5 +1,5 @@
 <template>
-	<q-card>
+	<div class="q-card">
 		<h2>
 			{{heading}}
 		</h2>
@@ -13,7 +13,7 @@
 			>
 			</Friend>
 		</div>
-	</q-card>
+	</div>
 </template>
 
 <script>

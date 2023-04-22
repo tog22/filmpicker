@@ -88,7 +88,6 @@ let lo = function (to_log) {
 	
 	.name {
 		font-weight: 500;
-		font-size: 1.3em;
 	}
 
 	.badge_container {

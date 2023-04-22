@@ -23,6 +23,14 @@ button {
 	font-size: 14px;
 }
 
+.q-card {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    vertical-align: top;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
 .blue_button,
 a.blue_button {
 	background-color: rgb(25,118,210);
@@ -35,11 +43,34 @@ a.blue_button {
 	background-color: rgb(83,134,208);
 }
 
-.blue_button.s_small {
+.blue_button {
 	border-radius: 3px;
 	border-width: 0px;
-	font-size: 10px;
 	line-height: 1.715em;
 	padding: 5px 16px;
 	box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2), 0 5px 8px rgba(0, 0, 0, 0.14), 0 1px 14px rgba(0, 0, 0, 0.12);
+}
+
+.blue_button.s_small {
+	
+	font-size: 10px;
+}
+
+.blue_button.s_medium {
+	font-size: 0.875em;
+}
+
+input[type="text"],
+input[type="password"] {
+	padding: 24px 12px 8px;
+	border: 1px solid rgb(194,194,194);
+	border-radius: 4px;
+	color: rgba(0, 0, 0, 0.87);
+	width: 100%;
+}
+
+input,
+input[type="text"],
+input[type="password"] {
+	margin-bottom: 1em;
 }

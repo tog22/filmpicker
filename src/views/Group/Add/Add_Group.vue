@@ -23,6 +23,7 @@
 				<input
 					type="submit"
 					value="Add"
+					class="blue_button s_medium"
 				/>
 			</div>
 		</form>
@@ -34,7 +35,7 @@ import $ from 'jquery'
 import { inject } from "vue"
 
 import Friends_List from '../../../Components/Friends/List/Friends_List'
-import Members_Mini_List from '../../../Components/Friends/Members_Mini_List/List'
+import Members_Mini_List from '../../../Components/Friends/Members_Mini_List/Members_List'
 
 export default {
 	name: 			'Add_Film_Page',
@@ -113,3 +114,11 @@ let lo = function (to_log) {
 }
 
 </script>
+
+<style>
+
+.members_mini_list {
+	margin-bottom: 2em;
+}
+
+</style>

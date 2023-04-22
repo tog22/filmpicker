@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 import Start_Page from '../views/Start_Page.vue'
 
 const routes = [
@@ -20,14 +19,14 @@ const routes = [
 	},
 	{
 		path: '/group/:id',
-		component: () => import(/* webpackChunkName: "main_chunk" */ '../views/Films/Page.vue'),
+		component: () => import(/* webpackChunkName: "main_chunk" */ '../views/Films/Films_Page.vue'),
 		meta: {
 			title: 'Film Picker'
 		}
 	},
 	{
 		path: '/group/add',
-		component: () => import(/* webpackChunkName: "edit_chunk" */ '../views/Group/Add/Page.vue'),
+		component: () => import(/* webpackChunkName: "edit_chunk" */ '../views/Group/Add/Add_Group.vue'),
 		meta: {
 			title: 'Film Picker'
 		}

@@ -6,14 +6,11 @@
 
         <Group_Films_Table />
 
-        <div class="button_row">
-          <q-btn
-              label="Add Film"
-              color="primary"
-              size="md"
-              @click="add_film()"
-          />
-        </div>
+		<div class="button_row">
+			<router-link to="/add" class="blue_button s_medium">
+				Add Film
+			</router-link>
+		</div>
 
     </div>
 </template>
@@ -32,12 +29,9 @@ export default {
     components:     {
         Group_Films_Table
     },
-    methods: {
-      add_film() {
-        this.store.sections.add_film.previous_page = '/group/'+this.group.id
-        this.$router.push('/add')
-      }
-    },
+	created() {
+		this.store.sections.add_film.previous_page = '/group/'+this.group.id // from quasar version, not sure if used yet
+	},
     data() {
       
       let group = groups[this.$route.params.id]
