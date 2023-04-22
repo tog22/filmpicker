@@ -279,7 +279,40 @@ td.rcell {
 
 
 	.ranking_container {
+
 		display: inline-block;
+
+		&.is_user {
+
+			min-width: 1.75em;
+			cursor: pointer;
+
+			.c_symbol {
+				border-color: black;
+				width: 1.75em;
+			}
+
+		}
+
+		.c_symbol {
+		
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+	
+	
+			font-size: 2em;
+	
+			/* ↓ Relative to font-size */
+			/* width: 1.75em; <-- disabled except for .is_user cells */
+			height: 1.75em;
+	
+			background: white;
+			border: 2px solid transparent;
+	
+		}
+	
+
 	}
 
 	.ranking_container:hover .do_rank {
@@ -289,45 +322,14 @@ td.rcell {
 	.ranking {
 		border-radius: 0.3em;
 		background-color: #7bcd72;
-	}
-
-	.ranking {
 		display: table;
-		cursor: pointer;
 	}
 
 	.do_rank {
 		cursor:     pointer;
 	}
-
-	.c_symbol {
-		
-		display: table-cell;
-		vertical-align: middle;
-		text-align: center;
-
-
-		font-size: 2em;
-
-		/* ↓ Relative to font-size */
-		width: 1.75em;
-		height: 1.75em;
-
-		background: white;
-		border: 2px solid transparent;
-
-	}
-
-	.is_user .c_symbol {
-		border-color: black;
-	}
-
 	.symbol {
 		line-height: 1;
-	}
-
-	.ranking {
-		/* display: none; */
 	}
 
 	.do_rank {
@@ -341,7 +343,6 @@ td.rcell {
 
 	.option {
 		display: table-row;
-
 	}
 }
 
