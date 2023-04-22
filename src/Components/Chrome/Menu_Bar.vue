@@ -108,9 +108,21 @@ export default {
 	background-color: white;
 	border: 1px solid black;
 
-	font-size: 0.8em;
+	font-size: 1em;
 	white-space: nowrap;
 	padding: 1em 2em 1.2em;
+}
+
+@media screen and ( max-width: 767px ) and ( hover:none ) {
+	#basic_menu {
+		font-size: 0.8em;
+	}
+}
+
+@media screen and ( max-width: 767px ) and ( hover:on-demand ) {
+	#basic_menu {
+		font-size: 0.8em;
+	}
 }
 
 #basic_menu p:first-child {
