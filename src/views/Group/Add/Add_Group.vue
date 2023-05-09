@@ -22,7 +22,7 @@
 			<div><!-- class="no_top"-->
 				<input
 					type="submit"
-					value="Add"
+					value="Create"
 					class="blue_button s_medium"
 				/>
 			</div>
