@@ -4,7 +4,7 @@
 			Create Movie Club
 		</h1>
 		<form
-			@submit="on_submit"
+			@submit.prevent="on_submit"
 			class="full_width_form q-gutter-y-md"
 		>
 			<input

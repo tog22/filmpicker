@@ -41,7 +41,7 @@
 			</div>
 		</div>
 	</div>
-	<Debug_Display/>
+	<!-- <Debug_Display/> -->
 </template>
 
 <script>

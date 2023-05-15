@@ -33,7 +33,9 @@ export default {
 		this.store.sections.add_film.previous_page = '/group/'+this.group.id // from quasar version, not sure if used yet
 	},
     data() {
-      
+      console.log(this.$route)
+	  let rtd = this.$route
+	  debugger
       let group = groups[this.$route.params.id]
       let store_parent = inject("store")
 
