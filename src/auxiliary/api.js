@@ -13,7 +13,7 @@ const api = axios.create({
 
 // defining a custom error handler for all APIs
 const errorHandler = (error) => {
-	const statusCode = error.response?.status
+	const statusCode = error.response.status
 	
 	// logging only errors that are not 401
 	if (statusCode && statusCode !== 401) {
@@ -65,7 +65,7 @@ function defineCancelApiObject(apiObject) {
 	return cancelApiObject
 }
 
-const godcloud = {
+const exported_api = {
 	get: async function (url, cancel = false) {
 		const response = await api.request({
 			url: 		url,
@@ -92,6 +92,6 @@ const godcloud = {
 	},
 }
 
-const cancelApiObject = defineCancelApiObject(godcloud)
+const cancelApiObject = defineCancelApiObject(exported_api)
 
-export default godcloud
+export default exported_api

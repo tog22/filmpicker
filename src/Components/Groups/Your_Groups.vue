@@ -26,19 +26,27 @@
 </template>
 
 <script>
-import dummy_server from '../../Dummy_Server/Data'
+// import dummy_server from '../../Dummy_Server/Data'
+// let groups = dummy_server.groups
 
-let groups = dummy_server.groups
+import api from '@/auxiliary/api'
+
 
 
 
 export default {
 	
 	name:'Your_Groups',
+
+	created() {
+		api.get('?action=get_groups').then((response) => {
+			this.groups = response.body.groups
+		})
+	},
 	
 	data() {
 		return {
-			groups:     groups
+			groups:     {}
 		}
 	}
 	
