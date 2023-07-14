@@ -19,6 +19,7 @@
 import { inject } from "vue"
 
 import dummy_server from '../../Dummy_Server/Data'
+import api from '@/auxiliary/api'
 
 import Group_Films_Table from '../../views/Films/Table'
 
@@ -30,17 +31,22 @@ export default {
         Group_Films_Table
     },
 	created() {
-		this.store.sections.add_film.previous_page = '/group/'+this.group.id // from quasar version, not sure if used yet
+		let gid = this.$route.params.id
+		this.store.sections.add_film.previous_page = '/group/'+gid
+		api.get('?action=get_groups').then((response) => {
+			this.group = response.body.groups[gid]
+		})
 	},
     data() {
-      debugger
-      let group = groups[this.$route.params.id]
-      let store_parent = inject("store")
-
-      return {
-        store: 			store_parent.state,
-        group:      group
-      }
+		let group_id = groups[this.$route.params.id]
+		let store_parent = inject("store")
+		
+		return {
+			store: 			store_parent.state,
+			group:			{
+				name:		'group name'
+			}
+		}
     }
 }
 
