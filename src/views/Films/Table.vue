@@ -75,6 +75,13 @@ export default {
 		Film
 	},
 
+	props: {
+		group: {
+			type: Number,
+			default: 1
+		}
+	},
+
 	methods: {
 
 		update_ranking(ranking, fid, uid) {
@@ -99,9 +106,8 @@ export default {
 
 	data() {
 
-		let group = 1
-		api.get_group_users(group, this)
-		api.get_group_films(group, this)
+		api.get_group_users(this.group, this)
+		api.get_group_films(this.group, this)
 
 		return {
 			films:      {},
