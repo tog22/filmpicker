@@ -3,34 +3,59 @@
 		<h1>
 				Find Film
 		</h1>
-		<q-form
-				@submit="on_submit"
+		<form
+				@submit.prevent="on_submit"
+				@keydown.enter="on_submit"
 				class="full_width_form q-gutter-y-md"
 		>
-			<q-input
+			<label class="qstyle" for="title">
+				<div class="label">
+					Title
+				</div>
+				<div class="corrector">
+				</div>
+				<input type="text" name="title" id="title" />
+			</label>
+			<div id="ff">fff</div>
+			<!-- <input
 					label="Title"
 					v-model="search_term"
 					outlined
 					:rules="[val => !!val || 'Enter a title']"
-			/>
+			/> -->
 			<div className="no_top">
-				<q-btn
+				<input
 						type="submit"
-						label="Search"
+						value="Search"
 						color="primary"
 						size="md"
 				/>
 			</div>
-			<q-banner id="banner" class="hidden text-white bg-red">
+			<div id="banner" class="hidden text-white bg-red">
 					Please enter a title or IMDB ID
-			</q-banner>
-		</q-form>
+			</div>
+		</form>
 	</div>
 </template>
 
 <script>
 import $ from 'jquery'
 import { inject } from "vue"
+
+$(document).ready(function() {
+	$('#ff').on('click', function() {
+		alert(33)
+	})
+
+	$('.qstyle input').on('focus', function() {
+		$(this).parent().addClass('focused')
+	})
+
+	$('.qstyle input').on('blur', function() {
+		$(this).parent().removeClass('focused')
+	})
+})
+
 
 export default {
 	name: 			'Add_Film_Page',
@@ -98,3 +123,28 @@ let lo = function (to_log) {
 }
 
 </script>
+
+<style>
+
+.qstyle {
+	position: relative;
+}
+
+.qstyle .label {
+	position: absolute;
+	top: 19px;
+	left: 14px;
+	color: #717171;
+}
+
+.qstyle.focused .label {
+	font-size: 12px;
+	top: 10px;
+}
+
+.qstyle input {
+	line-height: 24px;
+	font-size: 14px;
+}
+
+</style>

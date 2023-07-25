@@ -4,7 +4,7 @@
       <h2 v-html="group.name">
       </h2>
 
-        <Group_Films_Table />
+        <Group_Films_Table :group="group.id" />
 
 		<div class="button_row">
 			<router-link to="/add" class="blue_button s_medium">
@@ -38,13 +38,13 @@ export default {
 		})
 	},
     data() {
-		let group_id = groups[this.$route.params.id]
 		let store_parent = inject("store")
 		
 		return {
 			store: 			store_parent.state,
 			group:			{
-				name:		'group name'
+				name:		'group name',
+				id: 		this.$route.params.id
 			}
 		}
     }
