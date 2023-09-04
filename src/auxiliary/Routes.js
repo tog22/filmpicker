@@ -39,6 +39,13 @@ const routes = [
 		}
 	},
 	{
+		path: '/add2',
+		component: () => import(/* webpackChunkName: "adding_films" */ '../views/Films/Add/Find_Setup.vue'),
+		meta: {
+			title: 'Film Picker'
+		}
+	},
+	{
 		path: '/search_results',
 		component: () => import(/* webpackChunkName: "adding_films" */ '../views/Films/Add/Search_Results.vue'),
 		meta: {

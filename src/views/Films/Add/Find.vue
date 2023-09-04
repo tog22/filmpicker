@@ -16,7 +16,6 @@
 				</div>
 				<input type="text" name="title" id="title" />
 			</label>
-			<div id="ff">fff</div>
 			<!-- <input
 					label="Title"
 					v-model="search_term"
@@ -27,8 +26,6 @@
 				<input
 						type="submit"
 						value="Search"
-						color="primary"
-						size="md"
 				/>
 			</div>
 			<div id="banner" class="hidden text-white bg-red">
@@ -41,18 +38,19 @@
 <script>
 import $ from 'jquery'
 import { inject } from "vue"
+import q_input from "@/Components/Quasar/Input.vue"
 
 $(document).ready(function() {
-	$('#ff').on('click', function() {
-		alert(33)
-	})
-
 	$('.qstyle input').on('focus', function() {
-		$(this).parent().addClass('focused')
+		if (!$(this).parent().hasClass('small_title')) {
+			$(this).parent().addClass('small_title')
+		}
 	})
 
 	$('.qstyle input').on('blur', function() {
-		$(this).parent().removeClass('focused')
+		if (!$(this).val()) {
+			$(this).parent().removeClass('small_title')
+		}
 	})
 })
 
@@ -60,8 +58,12 @@ $(document).ready(function() {
 export default {
 	name: 			'Add_Film_Page',
 	components: {
+		q_input
 	},
 	methods: {
+		test() {
+			alert(this.search_term)
+		},
 		on_submit() {
 
 			let query_url = 'http://www.omdbapi.com/?apikey=67a0cf67&s='+this.search_term
@@ -137,7 +139,7 @@ let lo = function (to_log) {
 	color: #717171;
 }
 
-.qstyle.focused .label {
+.qstyle.small_title .label {
 	font-size: 12px;
 	top: 10px;
 }
@@ -145,6 +147,9 @@ let lo = function (to_log) {
 .qstyle input {
 	line-height: 24px;
 	font-size: 14px;
+	padding: 24px 14px 8px;
 }
+
+
 
 </style>
